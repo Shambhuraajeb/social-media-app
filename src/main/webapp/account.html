@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account with VibeNexa</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #3498db, #9b59b6);
+            overflow: hidden;
+        }
+
+        .container {
+            perspective: 1000px;
+        }
+
+        .card {
+            width: 300px;
+            height: 400px;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .card.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card .side {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background: linear-gradient(135deg, #3498db, #9b59b6);
+        }
+
+        .card .side.back {
+            transform: rotateY(180deg);
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #fff;
+            color: #3e1f6f;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #f48197;
+            color: #fff;
+        }
+
+        input, select, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Only one form tag wrapping the entire content -->
+    <form id="registrationForm" method="post" action="http://localhost:8082/Vibe/Account">
+        <div class="container">
+            <div class="card" id="card">
+                <div class="side">
+                    <h2>Create Account</h2>
+                    <!-- Form 1 -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="pass" required>
+
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                    <div class="btn-container">
+                        <!-- Added submit button for Form 1 -->
+                        <button type="submit" class="btn" onclick="submitForm()">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        
+        function submitForm() {
+            // Handle form submission here
+            // You can use JavaScript to gather form data and send it to the server
+            // For demonstration, we'll just alert the form data
+            //const formData = new FormData(document.getElementById('registrationForm'));
+            //alert('Form submitted!\n\n' + JSON.stringify(Object.fromEntries(formData.entries()), null, 2));
+        }
+    </script>
+</body>
+</html>

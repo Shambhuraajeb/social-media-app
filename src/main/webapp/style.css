@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.home-container {
+	width: 100%;
+	display: flex;
+	overflow: auto;
+	min-height: 100vh;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.home-container1 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+	padding-bottom: 1px;
+	justify-content: flex-start;
+}
+
+.home-container2 {
+	top: 0;
+	width: 25%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	background-color: #FAF9DE;
+	flex-direction: column;
+	position: fixed;
+	padding-top: 20px;
+}
+
+.container ul li {
+	padding-top: 35px;
+	list-style-type: none;
+}
+
+.nav-item {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+.nav-item:hover {
+	background-color: lightgray;
+	padding: 15px;
+	transition: .3s;
+	border-radius: 5px;
+	color: black;
+}
+
+.logo {
+	width: 35px;
+	height: 35px;
+}
+
+#mylogo {
+	width: 50px;
+	height: 50px;
+}
+
+strong {
+	font-family: Pacifico;
+	font-size: 30px;
+}
+
+b {
+	padding-left: 20px;
+	font-size: 20px;
+}
+
+.home-container3 {
+	top: 0;
+	margin-left: 25%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	right: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.story-area {
+	display: flex;
+	flex-direction: row;
+	margin: 50px 10px 1px 80px;
+}
+
+.storypost {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.name {
+	font-size: 15px;
+}
+
+.story {
+	padding-left: 10px;
+}
+
+.story img {
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	border: 2px orangered solid;
+}
+
+.post {
+	margin: 30px 1px 20px 130px;
+	width: 100px;
+	height: 100%;
+}
+
+.card {
+	margin-top: 50px;
+}
+
+.card-title img {
+	width: 30px;
+	height: 30px;
+}
+
+.profile {
+	display: flex;
+	flex-direction: row;
+	margin: 80px 0 0 50px;
+	width: 100%;
+}
+
+.profilepic {
+	padding-left: 10px;
+}
+
+.profilepic img {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	border: 2px orangered solid;
+}
+
+.profileimf {
+	height: 100%;
+	width: 100%;
+	padding-left: 20%;
+}
+
+.profileimf h2 {
+	font-size: 20px;
+}
+
+.personal {
+	margin-left: 50px;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.edit {
+	margin: 20px 0 0 20px;
+	width: 140px;
+}
+
+.other {
+	margin-left: 15%;
+}
+
+.post-hr {
+	border: grey solid 1px;
+	width: 100%;
+	margin: 30px 20px 0 20px;
+}
+
+
+.col1 img {
+	width: 40px;
+	height: 40px;
+}
+
+.col1 {
+	width: 50px;
+}
+
+.row {
+	margin-top: 10px;
+}
+
+.addfri {
+	text-align: right;
+	background-color: transparent;
+	border: none;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	color: #333;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+	background-color: lightgray;
+	color: white;
+}
+
+.dark-theme div {
+	background-color: lightgray;
+	color: white;
+}
+
+body .dark-theme .home-container2 .nav{
+	background-color: gray;
+	color: white;
+}
+
+.dark-theme div bold {
+	color: white;
+}
+
+.modal {
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+.dark-theme .modal {
+	background-color: black;
+	color: white;
+}
